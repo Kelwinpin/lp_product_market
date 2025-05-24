@@ -17,9 +17,21 @@ export default function Home() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/sendEmail`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("Pedido enviado com sucesso!");
+    } else {
+      alert("Ocorreu um erro ao enviar o pedido. Por favor, tente novamente mais tarde.");
+    }
   };
 
   const fadeIn = {
