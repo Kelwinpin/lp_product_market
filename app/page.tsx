@@ -109,7 +109,7 @@ export default function Home() {
               {
                 icon: Truck,
                 title: "Entrega",
-                description: "Entregamos em toda a cidade com rapidez e cuidado"
+                description: "Entregamos em toda a região do bairro Goiânia com rapidez e cuidado"
               }
             ].map((feature, index) => (
               <motion.div
