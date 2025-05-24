@@ -292,7 +292,7 @@ export default function Home() {
             {[
               { icon: MapPin, text: "288 - 469 Rua Canário,<br/> Belo Horizonte - MG" },
               { icon: Clock, text: "Seg a Sáb: 7:30h às 19:30h <br/> (Dom: 7:30h às 12:30h)" },
-              { icon: Phone, text: "(11) 99999-9999" }
+              { icon: Phone, text: "(31) 98609-0727" }
             ].map((item, index) => (
               <motion.div
                 key={item.text}
